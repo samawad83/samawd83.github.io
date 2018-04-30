@@ -2898,7 +2898,7 @@ blockquote span a {
     padding-right: 0;
 }
 .single-hobbie {
-    padding: 120px 10px;
+    padding: 30px 10px;
     width: 100%;
     background-color: #fafafa;
 }
@@ -2936,6 +2936,7 @@ blockquote span a {
     text-transform: uppercase;
 }
 .hobbie-content p {
+    display: none;
     font-size: 14px;
     line-height: 1.8;
     color: #333;
@@ -2954,6 +2955,16 @@ blockquote span a {
 }
 .single-hobbie:hover p {
     color: inherit;
+}
+
+@media (min-width: 600px) {
+    .single-hobbie {
+        padding: 120px 10px;
+    }
+    
+    .hobbie-content p {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 992px) {

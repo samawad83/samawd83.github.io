@@ -5,6 +5,8 @@ $(document).ready(function(){
 	// image loaded portfolio init
     $('.grid').imagesLoaded(function() {
         $('.portfolio-filter').on('click', 'button', function() {
+        	$('.portfolio-filter button').removeClass('active');
+        	$(this).addClass('active');
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({
                 filter: filterValue
